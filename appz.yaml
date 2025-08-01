@@ -18,4 +18,4 @@ deploy:
     - 22
 
 properties:
-    revision : 01
+    revision : 02
