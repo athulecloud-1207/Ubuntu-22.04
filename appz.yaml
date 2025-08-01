@@ -1,0 +1,21 @@
+app:
+    name: ubuntu
+    code: ubuntu
+    notify: asunil@ecloudcontrol.com
+
+build:
+    version: 22.04
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: Ubuntu-22.04
+
+deploy:
+    context: alpha/DEV
+    type: statefulset
+    replicas: 1
+    port:
+    - 22
+
+properties:
+    revision : 00
